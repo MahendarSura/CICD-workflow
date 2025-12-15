@@ -1,26 +1,21 @@
-# Observability & Monitoring – Simple Telugu-Medium Style
+# 5️⃣ Observability & Monitoring – Simple Telugu-Medium Style
+
 ---
 
-## 5️⃣ Pipeline Logs & Metrics
+## 5.1 Pipeline Logs & Metrics
 
 ### Emti (What):
-Pipeline lo **em jarigindo clear ga chudatam** logs & metrics dwara.
-
----
+Pipeline lo em jarigindo clear ga chudatam logs & metrics dwara.
 
 ### Enduku Use Cheyali (Why):
 - Failure ekkada vachindo telustundi  
 - Guess work thagguthundi  
 - Performance metrics → optimize pipelines & apps  
 
----
-
 ### Ela Use Chestharu (How):
 - Logs collect cheyadam  
 - Dashboard lo show cheyadam (Prometheus / Grafana / ELK Stack)  
 - Metrics analyze → trends & bottlenecks identify  
-
----
 
 ### How It Works (Step-by-Step):
 1. Pipeline run avuthundi  
@@ -30,22 +25,18 @@ Pipeline lo **em jarigindo clear ga chudatam** logs & metrics dwara.
 5. DevOps analyze chesthadu → alert setup  
 
 **Tip:**  
-Logs lekunte blind driving lantidi, always maintain structured logging.
+- Logs lekunte blind driving lantidi, always maintain structured logging  
 
 ---
 
-## 5.1 Alerts & Notifications
+## 5.2 Alerts & Notifications
 
 ### Emti (What):
-Pipeline fail / success ayithe **immediate message ravatam**
-
----
+Pipeline fail / success ayithe immediate message ravatam  
 
 ### Enduku Use Cheyali (Why):
 - Late ga teliste loss ekkuva  
 - Quick action → minimize downtime  
-
----
 
 ### Ela Use Chestharu (How):
 - Slack / Teams / Email integration  
@@ -53,30 +44,37 @@ Pipeline fail / success ayithe **immediate message ravatam**
 
 ---
 
-### Real-Time Workflow – Monitoring
-**What:** Failure alert  
-**Why:** Fast response  
-**When:** Pipeline fail ayinappudu  
-**Where:** Slack / Email  
-**How:** Automated alerts → DevOps / QA notified  
+## 5.3 Real-Time Daily CI/CD Workflow – Monitoring
+
+### What:
+- Failure alert → immediate notification  
+
+### Why:
+- Fast response  
+
+### When:
+- Pipeline fail ayinappudu  
+
+### Where:
+- Slack / Email  
+
+### How:
+- Automated alerts → DevOps / QA notified  
 
 ---
 
-# Security & Compliance – Simple Telugu-Medium Style
+# 6️⃣ Security & Compliance – Simple Telugu-Medium Style
+
 ---
 
-## 6️⃣ Secrets Management
+## 6.1 Secrets Management
 
 ### Emti (What):
-Passwords, API keys ni **code lo pettakunda secure store cheyadam**
-
----
+- Passwords, API keys ni code lo pettakunda secure store cheyadam  
 
 ### Enduku Use Cheyali (Why):
-Code leak ayithe secrets safe undali  
-Pipeline lo automation maintain cheyali  
-
----
+- Code leak ayithe secrets safe undali  
+- Pipeline lo automation maintain cheyali  
 
 ### How It Works (Step-by-Step):
 1. Secret secure store lo save (GitHub Secrets / Vault / AWS Secrets Manager)  
@@ -85,111 +83,96 @@ Pipeline lo automation maintain cheyali
 
 ---
 
-## 6.1 Vulnerability Checks
+## 6.2 Vulnerability Checks
 
 ### Emti (What):
-App / pipeline lo security holes automatic scan
-
----
+- App / pipeline lo security holes automatic scan  
 
 ### How It Works:
-1. Pipeline lo scan run (Snyk / Trivy / Dependabot)  
-2. Vulnerabilities detect  
-3. Fail / warn generate → alert DevOps  
+- Pipeline lo scan run (Snyk / Trivy / Dependabot)  
+- Vulnerabilities detect  
+- Fail / warn generate → alert DevOps  
 
 ---
 
-## 6.2 Policy Enforcement
+## 6.3 Policy Enforcement
 
 ### Emti (What):
-Deployment rules follow cheyithe ne allow cheyadam
-
----
+- Deployment rules follow cheyithe ne allow cheyadam  
 
 ### How It Works:
-1. PR raise → reviewers check  
-2. Approval required → pipeline execute  
-3. Policy violation → deploy block  
+- PR raise → reviewers check  
+- Approval required → pipeline execute  
+- Policy violation → deploy block  
 
 ---
 
-## 6.3 Real-Time Daily CI/CD Workflow – Security
+## 6.4 Real-Time Daily CI/CD Workflow – Security
 
 ### What:
-Secure deploy, secrets safe, policy maintain
+- Secure deploy, secrets safe, policy maintain  
 
 ### Why:
-Hack / data leak avoid cheyali
+- Hack / data leak avoid cheyali  
 
 ### When:
-Every pipeline run
+- Every pipeline run  
 
 ### Where:
-CI/CD system & cloud infra
+- CI/CD system & cloud infra  
 
 ### How:
-Scan → approve → deploy → alert  
+- Scan → approve → deploy → alert  
 
 ---
 
-# 7️⃣ Advanced CI/CD Practices – Simple Telugu-Medium Style
+# 7️⃣ Advanced CI/CD Concepts – Simple Telugu-Medium Style
+
 ---
 
 ## 7.1 Blue/Green & Canary Deployments
 
 ### Emti (What):
-Production lo safe deployment, gradual rollout
-
----
+- Production lo safe deployment, gradual rollout  
 
 ### Enduku Use Cheyali (Why):
 - Users ki downtime thaggutundi  
 - New release lo problem vaste rollback easy  
 
----
-
 ### How It Works:
-1. Blue environment → current live  
-2. Green environment → new version deploy  
-3. Canary release → small % users ki test  
-4. Success → complete switch  
+- Blue environment → current live  
+- Green environment → new version deploy  
+- Canary release → small % users ki test  
+- Success → complete switch  
 
-**Tip:** Always monitor metrics during rollout
+**Tip:** Always monitor metrics during rollout  
 
 ---
 
 ## 7.2 Feature Flags / Toggles
 
 ### Emti (What):
-New feature gradual ga release cheyadam
-
----
+- New feature gradual ga release cheyadam  
 
 ### Why:
 - Risk thaggutundi  
 - Controlled rollout & quick rollback  
 
----
-
 ### How:
 - Feature flag system integrate chestaru  
 - Pipeline stage lo enable/disable flags  
-- QA/DevOps verify → feature release  
+- QA / DevOps verify → feature release  
 
 ---
 
 ## 7.3 Pipeline as Code / Reusable Workflows
 
 ### Emti (What):
-Pipeline modular ga rayadam → multiple repos reuse
-
----
+- Pipeline modular ga rayadam → multiple repos reuse  
 
 ### Why:
 - Maintenance easy  
 - Consistent pipelines across projects  
-
----
 
 ### How:
 - YAML / JSON / DSL scripts  
@@ -201,15 +184,11 @@ Pipeline modular ga rayadam → multiple repos reuse
 ## 7.4 Parallel & Distributed Pipelines
 
 ### Emti (What):
-Jobs simultaneous ga run → faster CI/CD
-
----
+- Jobs simultaneous ga run → faster CI/CD  
 
 ### Why:
 - Large codebase / multiple microservices → time save  
 - Faster feedback  
-
----
 
 ### How:
 - Pipeline configure → multiple workers / agents  
@@ -218,10 +197,11 @@ Jobs simultaneous ga run → faster CI/CD
 
 ---
 
-### Practical Points – Advanced CI/CD
+## 7.5 Practical Points – Advanced CI/CD
+
 - Automated tests integrate cheyandi → early bug detection  
 - Containerize apps → dev/test/prod consistency  
 - Scheduled workflows → regression check  
 - Monitor pipelines & production → proactive failure resolution  
 - Modular workflows → reduce maintenance & duplication  
-- Feature toggles & controlled rollout → minimize risk
+- Feature toggles & controlled rollout → minimize risk  
