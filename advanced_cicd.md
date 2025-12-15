@@ -10,7 +10,9 @@
 **Example:** Imagine office lo oka “automation robot” untundi. Developer code push cheste, robot automatic ga code build, test, deploy chestundi.  
 
 **Why Use:** Complex workflows, custom requirements vunte  
+
 **When Use:** Multi-stage builds, enterprise applications  
+
 **Where Use:** On-prem servers / cloud (self-managed)  
 
 **How:**  
@@ -23,10 +25,12 @@
 **Enti:** GitLab lo built-in CI/CD, YAML format lo pipelines define chestharu  
 
 **Why:** GitLab integration native → PR (Merge request) triggers automatic pipelines  
+
 **When:** New feature or bug fix push ayyaka automatic run cheyali ante  
+
 **Where:** GitLab cloud or self-hosted  
 
-**How:** .gitlab-ci.yml file create cheyandi → jobs run automatically  
+**How:** `.gitlab-ci.yml` file create cheyandi → jobs run automatically  
 
 **Tip:** Parallel jobs & caching use cheyandi → faster pipelines
 
@@ -34,7 +38,9 @@
 **Enti:** Mostly cloud-based CI/CD tools  
 
 **Why:** Quick setup, easy to scale, minimal maintenance  
+
 **When:** Small/medium teams → push → automated test & deploy  
+
 **Where:** Cloud-hosted runners  
 
 **How:** YAML or GUI configuration → jobs run automatically  
@@ -45,7 +51,9 @@
 **Enti:** Microsoft CI/CD platform, Azure integration  
 
 **Why:** Especially .NET and Azure apps ki best  
+
 **When:** Deploy apps on Azure cloud  
+
 **Where:** Azure DevOps Services / Server  
 
 **How:** Pipeline YAML → Build → Test → Deploy → Release Gates
@@ -54,7 +62,9 @@
 **Enti:** Kubernetes-native CD tools → GitOps model follow chestai  
 
 **Why:** Automatic cluster sync → Git repo lo define chesina desired state ki match cheyadaniki  
+
 **When:** Kubernetes microservices deployment, GitOps pipelines  
+
 **Where:** Kubernetes clusters (cloud/on-prem)  
 
 **How:**  
@@ -72,6 +82,7 @@
 **Enti:** App ni “container” lo pack cheyadam → same environment dev/test/prod  
 
 **Why:** “Works on my machine” problem solve cheyadaniki  
+
 **When:** Build → Test → Deploy stages lo  
 
 **How:**  
@@ -85,13 +96,16 @@
 **Enti:** Container orchestration → multiple containers manage cheyadaniki  
 
 **Why:** Auto deploy, scale, rollback  
+
 **When:** Microservices / multi-container apps  
 
 **How:** Pipeline → kubectl / Helm charts use cheyandi → deploy
 
 ### 2.3 Container Registries
 **Enti:** Central storage for container images  
+
 **Why:** Version control, pull during deployment  
+
 **Examples:** Docker Hub, GHCR, AWS ECR
 
 ---
@@ -167,44 +181,61 @@ Jobs run simultaneously → faster CI/CD
 - Monitor pipelines & production → proactive failure resolution  
 - Modular workflows → reduce maintenance & duplication
 
+-------------------------------------------------------------------------------------------------------
+
+# Real-Time Daily CI/CD Workflow: What, Why, When, Where, How
+
 ---
 
-## Real-Time Daily CI/CD Workflow: What, Why, When, Where, How
+## 1️⃣ What: Evaru em chestharu?
 
-### 3.1 What: Evaru em chestharu?
-- Developers: Feature / bug fix code write, branch create, push, PR → CI/CD pipeline trigger  
-- QA/Testers: Automated test reports analyze, manual testing  
-- DevOps: Staging/production deploy approve, pipeline monitor  
-- CI/CD pipeline: Automatic build → test → deploy → alert/failure notify
+- **Developers:** Feature / bug fix code write, branch create, push, PR → CI/CD pipeline trigger  
+- **QA/Testers:** Automated test reports analyze, manual testing  
+- **DevOps:** Staging/production deploy approve, pipeline monitor  
+- **CI/CD pipeline:** Automatic build → test → deploy → alert/failure notify
 
-### 3.2 Why: Enduku ila chestharu?
+---
+
+## 2️⃣ Why: Enduku ila chestharu?
+
 - Frequent integration → conflicts reduce, early bug detect  
 - Automation → human errors reduce  
 - Fast feedback → developer fix faster  
 - Regression protection → existing features still work  
 - Scalability → multi-stage, matrix, conditional jobs → efficient releases
 
-### 3.3 When: Epudu chestharu?
+---
+
+## 3️⃣ When: Epudu chestharu?
+
 - Code push / PR → feature/bug complete ayyaka  
 - Scheduled workflows → nightly / weekly / monthly regression tests  
 - Manual triggers → emergency hotfix / urgent deploy
 
-### 3.4 Where: Ekkada chestharu?
+---
+
+## 4️⃣ Where: Ekkada chestharu?
+
 - Local dev environment → code write, unit tests  
 - CI/CD pipeline → Cloud / on-prem servers (GitHub Actions / Jenkins / GitLab / CircleCI)  
 - Staging → QA testing, pre-prod verification  
 - Production → end users ki deploy
 
-### 3.5 How: Ela chestharu?
+---
+
+## 5️⃣ How: Ela chestharu?
+
 1. Developer → branch create → code push → pipeline trigger  
 2. CI/CD Pipeline →  
-   - Build Stage: Compile code → artifact generate  
-   - Test Stage: Unit + Integration + Regression tests  
-   - Deploy Stage: Staging → DevOps/QA approve → Production  
+   - **Build Stage:** Compile code → artifact generate  
+   - **Test Stage:** Unit + Integration + Regression tests  
+   - **Deploy Stage:** Staging → DevOps/QA approve → Production  
 3. QA → test reports analyze → bug/issue report → regression check  
 4. Issue Resolution → logs analyze → replicate locally → fix → re-run → QA re-test
 
-### 3.6 Common Issues & Resolutions
+---
+
+## 6️⃣ Common Issues & Resolutions
 
 | **Issue** | **Why Happen** | **How Resolve** |
 |-----------|----------------|----------------|
@@ -213,11 +244,14 @@ Jobs run simultaneously → faster CI/CD
 | Deployment Fail | Config mismatch / env issue | Verify configs → fix → deploy again |
 | Regression Fail | New feature broke existing | Identify test → fix code → pipeline re-run |
 
-### 3.7 Practical Daily Tasks Summary
-- Developer: Write code → push → PR → review → merge  
-- QA: Test automation → report → manual check → confirm feature works  
-- Pipeline: Build → Test → Deploy → Alert → Logs  
-- DevOps: Monitor environments → approve production → troubleshoot issues  
+---
+
+## 7️⃣ Practical Daily Tasks Summary
+
+- **Developer:** Write code → push → PR → review → merge  
+- **QA:** Test automation → report → manual check → confirm feature works  
+- **Pipeline:** Build → Test → Deploy → Alert → Logs  
+- **DevOps:** Monitor environments → approve production → troubleshoot issues  
 
 **Tips:**  
 - Small frequent pushes → faster feedback  
