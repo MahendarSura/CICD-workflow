@@ -1,99 +1,82 @@
-# GitHub Actions CI/CD Basics (Complete Documentation)
-KK FUNDA – GitHub Actions Training
+# 1️⃣ CI/CD Ante Enti?  <!-- Main heading ~32px -->
 
----
+## 1.1 Continuous Integration (CI)  <!-- Sub-heading ~24px -->
+- **Developers frequent ga code merge chestharu main branch lo**  
+- Automatic build & tests run avvadam → broken code prevent cheyadam  
+- **Example:** Developer A & Developer B okati feature implement chesi push chesthe, pipeline automatically test chesi confirm chestundi everything works
 
-## 1. CI/CD Ante Enti?
-
-### 1.1 Continuous Integration (CI)
-GitHub Actions lo **Continuous Integration (CI)** ante developers frequent ga code merge chestharu main branch lo. Automatic build & tests run avvadam → broken code prevent cheyadam.  
-
-**Example:** Developer A & Developer B okati feature implement chesi push chesthe, pipeline automatically test chesi confirm chestundi everything works
-
-**Simple Definition:**  
-CI = Frequent code integration + automated build & test to ensure code quality
-
-### 1.2 Continuous Delivery / Deployment (CD)
+## 1.2 Continuous Delivery / Deployment (CD)  <!-- Sub-heading ~24px -->
 - **Code test pass ayyaka → staging / production environment lo deploy automation**  
 - Manual errors reduce avutai, releases faster avutai  
 - **Continuous Delivery:** Manual approval tarvata production lo deploy  
 - **Continuous Deployment:** Automatic production deploy
 
-### 1.3 Real-Time Daily Work
+## 1.3 Real-Time Daily Work  <!-- Sub-heading ~24px -->
 1. Developer code push → **CI pipeline trigger**  
 2. Build → **Unit tests** → **Integration tests** → **Artifact generate**  
 3. Pipeline fail → **logs analyze → reason identify → re-run pipeline**  
 4. QA team test reports check → confirm feature working  
 5. Deploy → automatic to staging → DevOps approve → production deploy
 
-### 1.4 Practical Tip
+## 1.4 Practical Tip  <!-- Sub-heading ~24px -->
 - **Frequent code merge practice cheyandi**  
 - **Automatic build & test setup cheyandi**
 
 ---
 
-## 2. Advanced CI/CD Pipelines
+# 2️⃣ Advanced CI/CD Pipelines  <!-- Main heading ~32px -->
 
-### 2.1 Multi-Stage Pipelines
-Pipeline ni **Build → Test → Deploy** stages lo divide cheyadam  
-Previous stage pass ayyaka matrame next stage run avvadam  
+## 2.1 Multi-Stage Pipelines
+- Pipeline ni **Build → Test → Deploy** stages lo divide cheyadam  
+- Previous stage pass ayyaka matrame next stage run avvadam  
+- **Real-Time Example:** Developer push → Build → compile errors detect → fail stop; Build pass → Test → Deploy → staging/prod  
+- **Tip:** Stage-by-stage failure identify → easier debugging
 
-**Real-Time Example:** Developer push → Build → compile errors detect → fail stop; Build pass → Test → Deploy → staging/prod  
+## 2.2 Conditional Jobs
+- Certain conditions satisfy ayite matrame next stage/job run avvadam  
+- **Example:** Feature branch → Build/Test; Main branch → Build/Test/Deploy; Tag vunte → Deploy to production automatically  
+- **Tip:** Avoid unnecessary jobs → faster CI/CD
 
-**Tip:** Stage-by-stage failure identify → easier debugging
+## 2.3 Matrix Builds
+- Multiple OS / versions lo **parallel tests run**  
+- **Example:** App Windows + Linux + Mac; Python / Node.js multiple versions lo parallel test → faster feedback  
+- **Tip:** GitHub Actions matrix setup → detect OS/version-specific bugs
 
-### 2.2 Conditional Jobs
-Certain conditions satisfy ayite matrame next stage/job run avvadam  
-
-**Example:** Feature branch → Build/Test; Main branch → Build/Test/Deploy; Tag vunte → Deploy to production automatically  
-
-**Tip:** Avoid unnecessary jobs → faster CI/CD
-
-### 2.3 Matrix Builds
-Multiple OS / versions lo **parallel tests run**  
-
-**Example:** App Windows + Linux + Mac; Python / Node.js multiple versions lo parallel test → faster feedback  
-
-**Tip:** GitHub Actions matrix setup → detect OS/version-specific bugs
-
-### 2.4 Scheduled Workflows
-Pipeline **automatic run at fixed intervals**  
-
-**Example:** Nightly builds → regression tests; Weekly full tests → all integration tests  
-
-**Regression:** Existing features break avvaledu ani test cheyadam  
-
-**Tip:** Automated regression → ensures stability
+## 2.4 Scheduled Workflows
+- Pipeline **automatic run at fixed intervals**  
+- **Example:** Nightly builds → regression tests; Weekly full tests → all integration tests  
+- **Regression:** Existing features break avvaledu ani test cheyadam  
+- **Tip:** Automated regression → ensures stability
 
 ---
 
-## 3. Real-Time Daily CI/CD Workflow: What, Why, When, Where, How
+# 3️⃣ Real-Time Daily CI/CD Workflow: What, Why, When, Where, How  <!-- Main heading ~32px -->
 
-### 3.1 What: Evaru em chestharu?
+## 3.1 What: Evaru em chestharu?
 - **Developers:** Feature / bug fix code write, branch create, push, PR → CI/CD pipeline trigger  
 - **QA/Testers:** Automated test reports analyze, manual testing  
 - **DevOps:** Staging/production deploy approve, pipeline monitor  
 - **CI/CD pipeline:** Automatic build → test → deploy → alert/failure notify
 
-### 3.2 Why: Enduku ila chestharu?
+## 3.2 Why: Enduku ila chestharu?
 - Frequent integration → conflicts reduce, bugs early detect  
 - Automation → human errors reduce  
 - Fast feedback → developer fix faster  
 - Regression protection → existing features still work  
 - Scalability → multi-stage, matrix, conditional jobs → efficient releases
 
-### 3.3 When: Epudu chestharu?
+## 3.3 When: Epudu chestharu?
 - Code push / PR → feature/bug complete ayyaka  
 - Scheduled workflows → nightly / weekly / monthly regression tests  
 - Manual triggers → emergency hotfix / urgent deploy
 
-### 3.4 Where: Ekkada chestharu?
+## 3.4 Where: Ekkada chestharu?
 - Local dev environment → code write, unit tests  
 - CI/CD pipeline → Cloud / on-prem servers (GitHub Actions / Jenkins)  
 - Staging → QA testing, pre-prod verification  
 - Production → end users ki deploy
 
-### 3.5 How: Ela chestharu?
+## 3.5 How: Ela chestharu?
 1. Developer → branch create → code push → pipeline trigger  
 2. CI/CD Pipeline →  
    - **Build Stage:** Compile code → artifact generate  
@@ -103,7 +86,6 @@ Pipeline **automatic run at fixed intervals**
 4. Issue Resolution → logs analyze → replicate locally → fix → re-run → QA re-test
 
 ### 3.6 Common Issues & Resolutions
-
 | **Issue** | **Why Happen** | **How Resolve** |
 |-----------|----------------|----------------|
 | Build Fail | Missing dependency / syntax error | Logs check → fix code/add dependency → re-run |
