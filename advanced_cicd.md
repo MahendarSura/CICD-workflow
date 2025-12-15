@@ -1,8 +1,5 @@
-Advanced CI/CD Tools & Practices – Real-Time Workflow
-
-
-
-1️⃣ Other CI/CD Tools / Platforms
+Advanced CI/CD Tools & Practices – Real-Time Workflow <!-- Main heading ~32px -->
+1️⃣ Other CI/CD Tools / Platforms <!-- Sub-heading ~24px -->
 1.1 Jenkins
 
 Enti: CI/CD pipeline build cheyadaniki most popular tool, chala plugins & customization support untundi.
@@ -10,9 +7,7 @@ Enti: CI/CD pipeline build cheyadaniki most popular tool, chala plugins & custom
 Example: Imagine office lo oka “automation robot” untundi. Developer code push cheste, robot automatic ga code build, test, deploy chestundi.
 
 Why Use: Complex workflows, custom requirements vunte
-
 When Use: Multi-stage builds, enterprise applications
-
 Where Use: On-prem servers / cloud (self-managed)
 
 How:
@@ -28,9 +23,7 @@ Tip: Pipeline stages clear ga divide cheyandi → easier debugging
 Enti: GitLab lo built-in CI/CD, YAML format lo pipelines define chestharu
 
 Why: GitLab integration native → PR (Merge request) triggers automatic pipelines
-
 When: New feature or bug fix push ayyaka automatic run cheyali ante
-
 Where: GitLab cloud or self-hosted
 
 How: .gitlab-ci.yml file create cheyandi → jobs run automatically
@@ -42,9 +35,7 @@ Tip: Parallel jobs & caching use cheyandi → faster pipelines
 Enti: Mostly cloud-based CI/CD tools
 
 Why: Quick setup, easy to scale, minimal maintenance
-
 When: Small/medium teams → push → automated test & deploy
-
 Where: Cloud-hosted runners
 
 How: YAML or GUI configuration → jobs run automatically
@@ -56,9 +47,7 @@ Tip: Parallel builds → faster feedback
 Enti: Microsoft CI/CD platform, Azure integration
 
 Why: Especially .NET and Azure apps ki best
-
 When: Deploy apps on Azure cloud
-
 Where: Azure DevOps Services / Server
 
 How: Pipeline YAML → Build → Test → Deploy → Release Gates
@@ -68,9 +57,7 @@ How: Pipeline YAML → Build → Test → Deploy → Release Gates
 Enti: Kubernetes-native CD tools → GitOps model follow chestai
 
 Why: Automatic cluster sync → Git repo lo define chesina desired state ki match cheyadaniki
-
 When: Kubernetes microservices deployment, GitOps pipelines
-
 Where: Kubernetes clusters (cloud/on-prem)
 
 How:
@@ -89,7 +76,6 @@ Tip: Blue/green or canary deployments ki perfect
 Enti: App ni “container” lo pack cheyadam → same environment dev/test/prod
 
 Why: “Works on my machine” problem solve cheyadaniki
-
 When: Build → Test → Deploy stages lo
 
 How:
@@ -107,7 +93,6 @@ Example: Oka app ni “boxed parcel” lo pack cheyadam → same box eppudu, ekk
 Enti: Container orchestration → multiple containers manage cheyadaniki
 
 Why: Auto deploy, scale, rollback
-
 When: Microservices / multi-container apps
 
 How: Pipeline → kubectl / Helm charts use cheyandi → deploy
@@ -115,7 +100,6 @@ How: Pipeline → kubectl / Helm charts use cheyandi → deploy
 2.3 Container Registries
 
 Enti: Central storage for container images
-
 Why: Version control, pull during deployment
 
 Examples: Docker Hub, GHCR, AWS ECR
@@ -132,7 +116,6 @@ Scheduled/nightly workflows → existing features break avvakunda check
 3.3 Code Quality / Coverage
 
 Tools: SonarQube, ESLint, Pylint, Coveralls
-
 Pipeline fail if coverage decreases → maintain code quality
 
 4️⃣ GitOps & Infrastructure Automation
@@ -143,7 +126,6 @@ Terraform / Ansible / Pulumi → infrastructure code lo define cheyadam → pred
 4.2 GitOps Approach
 
 Git repo = single source of truth
-
 Auto-sync → predictable & auditable deployments
 
 5️⃣ Observability & Monitoring
