@@ -1,5 +1,5 @@
 # GitHub Actions CI/CD Basics (Complete Documentation)
-KK FUNDA – GitHub Actions Training
+
 
 ---
 
